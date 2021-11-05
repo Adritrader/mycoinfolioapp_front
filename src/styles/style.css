@@ -39,3 +39,22 @@ button {
     top: var(--topNavbarHeight);
   }
 }
+
+.image-news {
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.news {
+
+  max-height: 100%;
+
+}
+
+.news p, h1, span{
+
+  color: black;
+
+}

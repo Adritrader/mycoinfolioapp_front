@@ -102,6 +102,7 @@ p {
 
 .dk-footer-box-info {
     position: absolute;
+    margin-top: -20px;
     border-radius: 20px;
     background: #E9E8FB;
     padding: 0px;

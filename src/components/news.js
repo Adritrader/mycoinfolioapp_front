@@ -3,7 +3,10 @@ import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
-import Coins from "./coin";
+import { NewsContextProvider } from "./newsContext";
+import News from "./newsShow";
+import '../styles/style.css';
+
 
 
 
@@ -20,7 +23,9 @@ class Index extends React.Component {
                             <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
                         </Breadcrumb>
 
-                        <Coins/>
+                        <NewsContextProvider>
+                            <News />
+                        </NewsContextProvider>
 
 
                     </Col>

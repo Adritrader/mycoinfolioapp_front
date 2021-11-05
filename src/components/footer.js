@@ -11,7 +11,7 @@ class Footer extends React.Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-12 col-lg-4">
-                                        <div className="dk-footer-box-info mt-3">
+                                        <div className="dk-footer-box-info">
                                             <div className="row d-flex justify-content-center">
                                     
                                             <a href="/" className="d-flex footer-logo justify-content-center">

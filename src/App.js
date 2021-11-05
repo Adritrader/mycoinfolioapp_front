@@ -27,6 +27,7 @@ import './styles/footer.css';
 import './styles/login.css';
 import './styles/style.css';
 import './styles/index.css';
+import Login from "./components/login";
 
 
 class App extends React.Component {
@@ -37,8 +38,8 @@ class App extends React.Component {
                 <Row className="m-0 p-0">
                     <Col className="m-0 p-0">
                           <Header/>
-
-
+            
+                            
 
                           <Footer/>
                     </Col>

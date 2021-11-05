@@ -5,6 +5,7 @@ import {Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import Register from "./register";
 import Index from "./index";
 import Login from "./login";
+import News from "./news";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -56,33 +57,16 @@ export default function NavbarRouter() {
           of them to render at a time
         */}
                 <Routes>
-                    <Route exact path="/">
-                        <Index />
-                    </Route>
-                    <Route path="/news">
-                        <News />
-                    </Route>
-                    <Route path="/calendar/idos">
-                        <CalendarIdos />
-                    </Route>
-                    <Route path="/calendar/events">
-                        <CalendarEvents />
-                    </Route>
-                    <Route path="/register">
-                        <Register />
-                    </Route>
-                    <Route path="/login">
-                        <Login />
-                    </Route>
+                    
+                    <Route path='/' element={<Index/>} />
+                    <Route path='/news' element={<News/>} />
+                    <Route path='/' element={<CalendarIdos/>} />
+                    <Route path='/' element={<CalendarEvents/>} />
+                    <Route path='/' element={<Login/>} />
+                    <Route path='/' element={<Register/>} />
+            
                 </Routes>
         </Router>
-    );
-}
-function News() {
-    return (
-        <div>
-            <h2>Aqui va el JS</h2>
-        </div>
     );
 }
 
