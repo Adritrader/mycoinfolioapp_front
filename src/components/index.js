@@ -16,7 +16,7 @@ class Index extends React.Component {
                 <Row className="m-0 p-0">
                     <Col className="m-0 p-0">
 
-                        <Breadcrumb>
+                        <Breadcrumb className="p-2">
                             <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
                         </Breadcrumb>
 
