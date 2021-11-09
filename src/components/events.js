@@ -2,10 +2,10 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
-import { NewsContextProvider } from "./newsContext";
-import News from "./newsShow";
-import '../styles/style.css';
+import { Breadcrumb } from 'react-bootstrap';
+import { EventsContextProvider } from "./eventsContext";
+import Events from './eventsShow';
+
 
 
 
@@ -21,12 +21,12 @@ class Index extends React.Component {
                     <Col className="m-0 p-0">
 
                         <Breadcrumb>
-                            <Breadcrumb.Item href="#">News</Breadcrumb.Item>
+                            <Breadcrumb.Item href="#">Events</Breadcrumb.Item>
                         </Breadcrumb>
 
-                        <NewsContextProvider>
-                            <News />
-                        </NewsContextProvider>
+                        <EventsContextProvider>
+                            <Events />
+                        </EventsContextProvider>
 
 
                     </Col>

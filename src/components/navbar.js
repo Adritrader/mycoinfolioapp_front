@@ -6,6 +6,7 @@ import Register from "./register";
 import Index from "./index";
 import Login from "./login";
 import News from "./news";
+import Events from "./events";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -33,8 +34,8 @@ export default function NavbarRouter() {
                         <Nav.Link className={'px-2'} href="/">Cryptocurrencies</Nav.Link>
                         <Nav.Link className={'px-2'} href="/news">News</Nav.Link>
                         <NavDropdown className={'px-2'} title="Calendar" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="calendar/idos">Upcoming IDOs</NavDropdown.Item>
-                            <NavDropdown.Item href="calendar/events">Event Calendar</NavDropdown.Item>
+                            <NavDropdown.Item href="/idos">Upcoming IDOs</NavDropdown.Item>
+                            <NavDropdown.Item href="/events">Event Calendar</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link className={'px-2'} href="/documentation">Documentation</Nav.Link>
                     </Nav>
@@ -61,7 +62,7 @@ export default function NavbarRouter() {
                     <Route path='/' element={<Index/>} />
                     <Route path='/news' element={<News/>} />
                     <Route path='/' element={<CalendarIdos/>} />
-                    <Route path='/' element={<CalendarEvents/>} />
+                    <Route path='/events' element={<Events/>} />
                     <Route path='/' element={<Login/>} />
                     <Route path='/' element={<Register/>} />
             
