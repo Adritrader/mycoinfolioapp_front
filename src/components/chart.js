@@ -100,10 +100,15 @@ export default function Chart() {
 
     setpair(e.target.value);
   };
+
+  
   return (
-    <div className="container">
+   
+    <div className="container mt-2">
       {
-        <select name="currency" value={pair} onChange={handleSelect}>
+        <div className="row">
+          <div className="col-2">
+        <select className="mt-3 form-control form-control-sm" name="currency" value={pair} onChange={handleSelect}>
           {currencies.map((cur, idx) => {
             return (
               <option key={idx} value={cur.id}>
@@ -112,8 +117,12 @@ export default function Chart() {
             );
           })}
         </select>
+        </div>
+        </div>
       }
       <Dashboard price={price} data={pastData} />
     </div>
   );
+      
+
 }

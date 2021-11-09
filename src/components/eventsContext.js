@@ -14,7 +14,7 @@ export const EventsContextProvider = (props) => {
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
-      console.log(data);
+
   }, []);
 
   return (

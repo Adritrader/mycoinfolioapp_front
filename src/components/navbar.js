@@ -45,6 +45,7 @@ export default function NavbarRouter() {
                         <Nav.Link className="px-3" href="/register">
                             Sign Up
                         </Nav.Link>
+                        <Nav.Link className="px-3" href="/profile">Profile</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -64,25 +65,10 @@ export default function NavbarRouter() {
                     <Route path='/events' element={<Events/>} />
                     <Route path='/login' element={<Login/>} />
                     <Route path='/register' element={<Register/>} />
+                    <Route path='/profile' element={<Register/>} />
             
                 </Routes>
         </Router>
     );
 }
 
-
-function CalendarIdos() {
-    return (
-        <div>
-            <h2>Calendar IDO's</h2>
-        </div>
-    );
-}
-
-function CalendarEvents() {
-    return (
-        <div>
-            <h2>Calendar Events</h2>
-        </div>
-    );
-}
