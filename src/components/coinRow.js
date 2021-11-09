@@ -21,7 +21,7 @@ const CoinRow = ({ coin, index }) => {
                     coin.price_change_percentage_24h > 0 ? "text-success" : "text-danger"
                 }
             >
-                 {coin.price_change_percentage_24h}
+                 {coin.price_change_percentage_24h}%
             </td>
 
             <td>

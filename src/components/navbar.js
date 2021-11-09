@@ -7,6 +7,7 @@ import Index from "./index";
 import Login from "./login";
 import News from "./news";
 import Events from "./events";
+import Chart from "./chart";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -32,12 +33,10 @@ export default function NavbarRouter() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link className={'px-2'} href="/">Cryptocurrencies</Nav.Link>
+                        <Nav.Link className={'px-2'} href="/charts">Charts</Nav.Link>
                         <Nav.Link className={'px-2'} href="/news">News</Nav.Link>
-                        <NavDropdown className={'px-2'} title="Calendar" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="/idos">Upcoming IDOs</NavDropdown.Item>
-                            <NavDropdown.Item href="/events">Event Calendar</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link className={'px-2'} href="/documentation">Documentation</Nav.Link>
+                        <Nav.Link className={'px-2'} href="/events">Events</Nav.Link>
+                        <Nav.Link className={'px-2'} href="/analysis">Analysis</Nav.Link>
                     </Nav>
                     
                     <Nav className="col-7 justify-content-end">
@@ -60,11 +59,11 @@ export default function NavbarRouter() {
                 <Routes>
                     
                     <Route path='/' element={<Index/>} />
+                    <Route path='/charts' element={<Chart/>} />
                     <Route path='/news' element={<News/>} />
-                    <Route path='/' element={<CalendarIdos/>} />
                     <Route path='/events' element={<Events/>} />
-                    <Route path='/' element={<Login/>} />
-                    <Route path='/' element={<Register/>} />
+                    <Route path='/login' element={<Login/>} />
+                    <Route path='/register' element={<Register/>} />
             
                 </Routes>
         </Router>
