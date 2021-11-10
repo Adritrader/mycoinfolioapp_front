@@ -8,6 +8,7 @@ import Login from "./login";
 import News from "./news";
 import Events from "./events";
 import Chart from "./chart";
+import Analysis from "./analysis";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -63,6 +64,7 @@ export default function NavbarRouter() {
                     <Route path='/charts' element={<Chart/>} />
                     <Route path='/news' element={<News/>} />
                     <Route path='/events' element={<Events/>} />
+                    <Route path='/analysis' element={<Analysis/>} />
                     <Route path='/login' element={<Login/>} />
                     <Route path='/register' element={<Register/>} />
                     <Route path='/profile' element={<Register/>} />

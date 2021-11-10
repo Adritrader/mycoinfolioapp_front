@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Dashboard from "./dashboard";
 import { formatData } from "./utils";
+import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
+
 
 
 export default function Chart() {
@@ -104,25 +106,39 @@ export default function Chart() {
   
   return (
    
-    <div className="container mt-2">
+    <div className="container-fluid mt-2">
       {
+        <>
         <div className="row">
-          <div className="col-2">
-        <select className="mt-3 form-control form-control-sm" name="currency" value={pair} onChange={handleSelect}>
-          {currencies.map((cur, idx) => {
-            return (
-              <option key={idx} value={cur.id}>
-                {cur.display_name}
-              </option>
-            );
-          })}
-        </select>
+          <div className="col-12">
+
+            <Breadcrumb>
+              <Breadcrumb.Item href="#">News</Breadcrumb.Item>
+            </Breadcrumb>
+
+          </div>
         </div>
+        
+        <div className="container mt-2">
+          <div className="row">
+            <div className="col-2">
+              <select className="mt-3 form-control form-control-sm" name="currency" value={pair} onChange={handleSelect}>
+                {currencies.map((cur, idx) => {
+                return (
+                  <option key={idx} value={cur.id}>
+                  {cur.display_name}
+                </option>
+                );
+                })}
+              </select>
+            </div>
+          </div>
         </div>
+        </>
       }
       <Dashboard price={price} data={pastData} />
     </div>
   );
-      
+  
 
 }
