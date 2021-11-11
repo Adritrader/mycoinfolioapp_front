@@ -1,5 +1,5 @@
 import React from "react";
-import AnalysisRow from "./analysisRow";
+import AnalysisRow from "./analysisRow2";
 
 const titles = ["#", "Content", "Price", "Price Change","24h Volume"];
 

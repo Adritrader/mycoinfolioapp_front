@@ -6,11 +6,6 @@ import { Breadcrumb } from 'react-bootstrap';
 import { EventsContextProvider } from "./eventsContext";
 import Events from './eventsShow';
 
-
-
-
-
-
 class Index extends React.Component {
 
     render() {

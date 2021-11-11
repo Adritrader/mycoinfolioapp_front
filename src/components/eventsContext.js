@@ -5,7 +5,7 @@ export const EventsContext = createContext();
 
 export const EventsContextProvider = (props) => {
   const [data, setData] = useState();
-  
+
 
   useEffect(() => {
     axios

@@ -4,13 +4,16 @@ import axios from "axios";
 export const AnalysisContext = createContext();
 
 export const AnalysisContextProvider = (props) => {
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
+  
+
+
   
 
   useEffect(() => {
     axios
       .get(
-        `http://app.mycoinfolio/api/v1/analysis`
+        `http://app.mycoinfolio/api/v1/1/analysis`
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
