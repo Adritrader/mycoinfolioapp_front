@@ -4,7 +4,6 @@ import '../styles/style.css';
 function AnalysisDetail({ data }) {
   return (
 
-    
     <div className="col-9 p-5 news-col">
     
       <section class="card border shadow mt-3">

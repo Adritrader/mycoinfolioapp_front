@@ -5,12 +5,9 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-
-
-
 // start the Stimulus application
 
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import ReactDom from 'react-dom';
 import { Container, Row, Col} from 'react-bootstrap';
 import Header from "./components/header";
@@ -28,9 +25,11 @@ import './styles/login.css';
 import './styles/style.css';
 import './styles/index.css';
 import Login from "./components/login";
+import appLogin from "./components/appLogin";
 
 
 class App extends React.Component {
+
 
     render() {
         return (
