@@ -22,7 +22,7 @@ export default function AppLogin(){
 
             try {
 
-                const {data: user} = await Axios.get('/api/users/');
+                const {data: user} = await Axios.get('http://app.mycoinfolio/api/v1/users');
                 setUser(user);
                 setLoadingUser(false);
 
@@ -42,7 +42,7 @@ export default function AppLogin(){
 
     async function login(email, password) {
 
-        const {data} = await Axios.post('api/users/login', {email, password});
+        const {data} = await Axios.post('http://app.mycoinfolio/api/v1/login', {email, password});
         setUser(data.user);
         setToken(data.token);
     }
