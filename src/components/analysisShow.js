@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AnalysisContext } from "./analysisContext";
+import { AnalysisContext } from "../contexts/analysisContext";
 import AnalysisDetail from "./analysisDetail";
 
 function Analysis(props) {

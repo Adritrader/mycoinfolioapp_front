@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { EventsContext } from "./eventsContext";
+import { EventsContext } from "../contexts/eventsContext";
 import EventsDetail from "./eventsDetail";
 
 function Events(props) {
   const { data } = useContext(EventsContext);
-  console.log(data);
+  
 
   return (
     <div>

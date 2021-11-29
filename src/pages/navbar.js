@@ -7,8 +7,8 @@ import Index from "./index";
 import Login from "./login";
 import News from "./news";
 import Events from "./events";
-import Chart from "./chart";
-import Analysis from "./analysis";
+import Chart from "../components/chart";
+import Analysis from "../components/analysis";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).

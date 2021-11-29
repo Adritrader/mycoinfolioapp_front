@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
-import Coins from "./coin";
+import Coins from "../components/coin";
 
 
 

@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Breadcrumb } from 'react-bootstrap';
-import { AnalysisContextProvider } from "./analysisContext";
+import { AnalysisContextProvider } from "../contexts/analysisContext";
 import Analysis from "./analysisShow";
 import '../styles/style.css';
 

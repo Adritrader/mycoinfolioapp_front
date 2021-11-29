@@ -10,8 +10,8 @@
 import React, {useState, useEffect} from 'react';
 import ReactDom from 'react-dom';
 import { Container, Row, Col} from 'react-bootstrap';
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./pages/header";
+import Footer from "./pages/footer";
 
 
 import "./styles/bootstrap.min.css";
@@ -24,7 +24,7 @@ import './styles/footer.css';
 import './styles/login.css';
 import './styles/style.css';
 import './styles/index.css';
-import Login from "./components/login";
+import Login from "./pages/login";
 import appLogin from "./components/appLogin";
 
 
