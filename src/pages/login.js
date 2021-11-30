@@ -58,9 +58,9 @@ class Login extends Component {
                                     <div className="card">
                                     <form onSubmit={this.handleSubmit} className="box">
                                         <h1>Login</h1>
-                                        <input type="text" name="username" placeholder="Username" value={this.state.username} onChange={this.onUsernameChange} required/>
+                                        <input type="text" name="username" placeholder="Email" value={this.state.username} onChange={this.onUsernameChange} required/>
                                         <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.onPasswordChange} required/>
-                                        <button type="submit" className="btn btn-primary mt-2" value="Signup">Signup</button>
+                                        <button type="submit" className="btn btn-primary mt-2" value="Signup">Login</button>
                                     </form>
                                     </div>
                                 </div>

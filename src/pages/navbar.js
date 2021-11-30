@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import {Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import {Navbar, NavDropdown, Nav, Dropdown, Col, Image } from 'react-bootstrap';
 import Register from "./register";
 import Index from "./index";
 import Login from "./login";
@@ -46,7 +46,17 @@ export default function NavbarRouter() {
                         <Nav.Link className="px-3" href="/register">
                             Sign Up
                         </Nav.Link>
-                        <Nav.Link className="px-3" href="/profile">Profile</Nav.Link>
+                        <Dropdown>
+                        <Col xs={6} md={4}>
+                            <Image src="../../public/img/logo-mycoinfolio.png" rounded />
+                        </Col>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -6,3 +6,11 @@ a {
     text-decoration: none;
 }
 
+#alerta{
+    margin-top:1 0px;
+    display: none;
+}
+
+#alerta p{
+    color: mediumseagreen;
+}
