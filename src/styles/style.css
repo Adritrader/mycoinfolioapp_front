@@ -12,6 +12,65 @@ a {
 
 }
 
+#current-price {
+
+  color: #DBD8E3 !important;
+
+}
+
+#table-coin td {
+
+  background-color: #352F44 !important;
+  color: #DBD8E3;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+
+
+}
+
+#table-coin tr:hover {
+
+  background-color: #2A2438 !important;
+
+
+}
+
+#td0 {
+
+  border-radius: 20px 0px 0px 0px !important;
+  padding: 5px !important;
+
+}
+#td4 {
+
+  border-radius: 0px 20px 0px 0px !important;
+  padding: 5px !important;
+
+}
+
+#td4 {
+
+  border-radius: 0px 20px 0px 0px !important;
+  padding: 5px !important;
+
+}
+
+#td4 {
+
+  border-radius: 0px 0px 0px 20px !important;
+  padding: 5px !important;
+
+}
+
+.chart-container canvas {
+
+  background-color:#DBD8E3 !important;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 20px;
+
+}
+
 :root {
   --offcanvas-width: 270px;
   --topNavbarHeight: 56px;

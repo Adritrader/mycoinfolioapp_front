@@ -26,7 +26,7 @@ function Coins() {
 
     return (
         <div className="container">
-            <div className="row">
+            <div id="table-coin" className="row">
                 <div className="col-3 ml-0 pl-0">
                     <input type="text" placeholder="Search a Coin"
                            className="form-control bg-dark text-light border-0 mt-4 text-center"

@@ -113,7 +113,7 @@ export default function Chart() {
           <div className="col-12">
 
             <Breadcrumb>
-              <Breadcrumb.Item href="#">News</Breadcrumb.Item>
+              <Breadcrumb.Item href="/charts">Charts</Breadcrumb.Item>
             </Breadcrumb>
 
           </div>
@@ -136,9 +136,13 @@ export default function Chart() {
         </div>
         </>
       }
+      <div className="container-fluid mt-2">
+          <div className="row justify-content-center">
+            <div className="col-12 col-lg-12 col-sm-12 col-xs-12">
       <Dashboard price={price} data={pastData} />
     </div>
+    </div>
+    </div>  
+    </div>
   );
-  
-
 }

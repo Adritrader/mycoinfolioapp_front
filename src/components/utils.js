@@ -5,8 +5,8 @@ export const formatData = (data) => {
         {
           label: "Price",
           data: [],
-          backgroundColor: "rgb(0, 0, 0, 1)",
-          borderColor: "rgba(255, 255, 255, 1)",
+          backgroundColor: "rgb(255, 255, 255, 1)",
+          borderColor: "rgba(42, 36, 56, 1)",
           fill: false,
           color: "rgb(0, 0, 0, 1)"
         }
