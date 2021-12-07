@@ -9,6 +9,7 @@ import News from "./news";
 import Events from "./events";
 import Chart from "../components/chart";
 import Analysis from "../components/analysis";
+import Profile from "./profile";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -47,9 +48,7 @@ export default function NavbarRouter() {
                             Sign Up
                         </Nav.Link>
                         <Dropdown>
-                        <Col xs={6} md={4}>
-                            <Image src="../../public/img/logo-mycoinfolio.png" rounded />
-                        </Col>
+                
 
                             <Dropdown.Menu>
                                 <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -77,7 +76,7 @@ export default function NavbarRouter() {
                     <Route path='/analysis' element={<Analysis/>} />
                     <Route path='/login' element={<Login/>} />
                     <Route path='/register' element={<Register/>} />
-                    <Route path='/profile' element={<Register/>} />
+                    <Route path='/profile' element={<Profile/>} />
             
                 </Routes>
         </Router>

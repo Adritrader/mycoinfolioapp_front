@@ -7,7 +7,6 @@ export const AnalysisContextProvider = (props) => {
   const [data, setData] = useState({});
   
 
-
   
 
   useEffect(() => {

@@ -98,7 +98,7 @@ class Footer extends React.Component {
                                                         <div className="form-row">
                                                             <div className="col dk-footer-form">
                                                                 <input type="email" className="form-control" placeholder="Email Address" />
-                                                                <button type="submit" className="h-80">
+                                                                <button type="submit" className="h-100">
                                                                     <i className="far
                                                                        fa-paper-plane ml-3"></i>
                                                                 </button>

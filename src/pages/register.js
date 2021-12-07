@@ -61,17 +61,12 @@ class Register extends Component {
 
     console.log(JSON.stringify(data));
     
-
     axios.post("http://mycoinfolioproject/api/v1/register", data)
       .then(res => console.log(res))
       .catch(err => console.log(err));
 
   };
   
-  
-  
-  
-
   render() {
     return (
 

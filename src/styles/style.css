@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
-body,
-button {
+body {
   font-family: "Inter", sans-serif;
+  color: #2A2438 !important;
+  background-color: #352F44 !important;
 }
+
+a {
+
+  color: #DBD8E3 !important;
+  text-decoration: none !important;
+
+}
+
 :root {
   --offcanvas-width: 270px;
   --topNavbarHeight: 56px;

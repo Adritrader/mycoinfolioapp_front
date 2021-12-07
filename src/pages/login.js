@@ -4,8 +4,6 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import axios from "axios";
 
-
-
 class Login extends Component {
 
     state = {
@@ -36,14 +34,15 @@ class Login extends Component {
     
         };
     
-        console.log(JSON.stringify(data));
+        
         
     
         axios.post("http://mycoinfolioproject/api/v1/login_check", data)
           .then(res => console.log(res))
           .catch(err => console.log(err));
-    
+
       };
+
 
     render() {
 
@@ -60,7 +59,7 @@ class Login extends Component {
                                         <h1>Login</h1>
                                         <input type="text" name="username" placeholder="Email" value={this.state.username} onChange={this.onUsernameChange} required/>
                                         <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.onPasswordChange} required/>
-                                        <button type="submit" className="btn btn-primary mt-2" value="Signup">Login</button>
+                                        <button type="submit" className="btn btn-secondary mt-2" value="Signup">Login</button>
                                     </form>
                                     </div>
                                 </div>

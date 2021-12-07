@@ -51,7 +51,7 @@ export default function AppLogin(){
 
     async function AppSignup(user) {
 
-        const { data } = await Axios.post('api/users/signup', user);
+        const { data } = await Axios.post('http://app.mycoinfolio/api/v1/signup', user);
 
     setUser(data.user);
     setToken(data.token);
